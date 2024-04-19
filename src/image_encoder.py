@@ -5,12 +5,14 @@ Testing image encoder
 
 # requirements -------------------------------------------
 #! pip install pytorch_pretrained_vit
+#! pip install timm
 #! wget https://raw.githubusercontent.com/lukemelas/EfficientNet-PyTorch/master/examples/simple/img.jpg
 #! wget https://raw.githubusercontent.com/lukemelas/EfficientNet-PyTorch/master/examples/simple/labels_map.txt
 # --------------------------------------------------------
 
 import json
 import torch
+import timm
 from PIL import Image
 from torchvision import transforms
 from pytorch_pretrained_vit import ViT
@@ -19,10 +21,14 @@ DEVICE = "cuda:0" if torch.cuda.is_available() else None
 MODELNAME = "B_16_imagenet1k"
 
 def load_pretrained_model(model_name="B_16_imagenet1k"):
-	"""
-	Download pretrained ViT model loaded into device
-	"""
+	""" Download pretrained ViT model loaded into device """
 	model = ViT(model_name, pretrained=True)
+	model.to(device)
+	return model
+
+def load_pretrained_fromtimm(
+	""" Download pretrained ViT model from timm HF hub """
+	model = timm.create_model('vit_base_patch16_224.augreg2_in21k_ft_in1k', pretrained=True)
 	model.to(device)
 	return model
 

@@ -26,9 +26,9 @@ def load_pretrained_model(model_name="B_16_imagenet1k"):
 	model.to(device)
 	return model
 
-def load_pretrained_fromtimm(
+def load_pretrained_fromtimm(model_name="vit_base_patch16_224.augreg2_in21k_ft_in1k"):
 	""" Download pretrained ViT model from timm HF hub """
-	model = timm.create_model('vit_base_patch16_224.augreg2_in21k_ft_in1k', pretrained=True)
+	model = timm.create_model(model_name, pretrained=True)
 	model.to(device)
 	return model
 

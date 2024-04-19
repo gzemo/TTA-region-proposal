@@ -16,18 +16,25 @@ import timm
 from PIL import Image
 from torchvision import transforms
 from pytorch_pretrained_vit import ViT
+from transformers import ResNetForImageClassification
 
 DEVICE = "cuda:0" if torch.cuda.is_available() else None
 MODELNAME = "B_16_imagenet1k"
 
-def load_pretrained_model(model_name="B_16_imagenet1k"):
+def load_pretrained_resnet(model_name="microsoft/resnet-50"):
+	""" Download pretrained ResNet50 model pretrained over ImageNet1k """
+	model = ResNetForImageClassification.from_pretrained('microsoft/resnet-50')
+	model.to(device)
+	return model
+	
+def load_pretrained_ViT(model_name="B_16_imagenet1k"):
 	""" Download pretrained ViT model loaded into device """
 	model = ViT(model_name, pretrained=True)
 	model.to(device)
 	return model
 
-def load_pretrained_fromtimm(model_name="vit_base_patch16_224.augreg2_in21k_ft_in1k"):
-	""" Download pretrained ViT model from timm HF hub """
+def load_pretrained_ViT_fromtimm(model_name="vit_base_patch16_224.augreg2_in21k_ft_in1k"):
+	""" Download pretrained ViT model from timm HF hub (ImageNet training 21K, finetuning 1K)"""
 	model = timm.create_model(model_name, pretrained=True)
 	model.to(device)
 	return model
@@ -62,7 +69,7 @@ def evaluateImage(img, labelclass, noutputs=1):
 if __name__ == "__main__":
 	
 	# loading model 
-	model = load_pretrained_model(MODELNAME)
+	model = load_pretrained_ViT(MODELNAME)
 	
 	# normalizing images
 	img = preprocess_image(Image.open('img.jpg'))

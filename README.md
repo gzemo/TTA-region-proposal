@@ -6,6 +6,6 @@
 
 [CoLAB Notebook (with CMA-ES implementation)](https://colab.research.google.com/drive/1dn_ShWc0ulDewiGIjTnU5UwLSlyu_a06?usp=sharing)
 
-[CoLAB Notebook (with CMA-ES implementation) and Entropy map testing](https://colab.research.google.com/drive/1jK08Hx10QWX3SFNeiSVORKEqDppa6hvy#scrollTo=pb-ZB2RdNTXx)
+[CoLAB Notebook (with CMA-ES implementation) and Entropy map testing](https://colab.research.google.com/drive/1jK08Hx10QWX3SFNeiSVORKEqDppa6hvy#scrollTo=DDSzKgRUFsKG)
 
 **Testing pictures:** credits @ [Pexel.com](https://www.pexels.com/it-it/) (CC-0)

@@ -6,7 +6,7 @@
 
 ## To do:
 ### Visualization
-- [ ] flux diagram
+- [X] flux diagram
 
 ### connection issues
 - [ ] Connect AWS notebook to imagenet-a bucket dataset
@@ -17,4 +17,5 @@
 - [ ] Once CMA-ES obtains optimal generation for bounding box, gaussian noise must be injected to move the bounding boxes or alternatively train forms of early stopping
 
 ### MEMO improvement
+
 

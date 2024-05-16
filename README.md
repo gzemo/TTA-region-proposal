@@ -6,7 +6,7 @@
 
 ## To do:
 ### Visualization
-- [X] flux diagram
+- [ ] flux diagram
 
 ### connection issues
 - [ ] Connect AWS notebook to imagenet-a bucket dataset

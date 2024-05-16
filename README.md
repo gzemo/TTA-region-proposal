@@ -9,7 +9,7 @@
 - [ ] flux diagram
 
 ### connection issues
-- [ ] Connect AWS notebook to imagenet-a bucket dataset
+- [x] Connect AWS notebook to imagenet-a bucket dataset (you need to insert "imagenet-a" inside of the img_root of dataloader while running main() )
 - [ ] Insert classes list based on the "ReadMe" inside the imagenet-a dataset
 - [ ] Connect output probabilities to text
 

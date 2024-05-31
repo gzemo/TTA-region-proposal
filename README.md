@@ -1,6 +1,7 @@
 # tta-deep-learning
 
-[CoLAB Notebook (with CMA-ES implementation) and Entropy map testing](https://colab.research.google.com/drive/1jK08Hx10QWX3SFNeiSVORKEqDppa6hvy#scrollTo=DDSzKgRUFsKG)
+If you want to test the latest version, please download the `TTA_project_SRtesting.ipynb` file that had been modifies in AWS.
+(Deprecated) [CoLAB Notebook (with CMA-ES implementation) and Entropy map testing](https://colab.research.google.com/drive/1jK08Hx10QWX3SFNeiSVORKEqDppa6hvy#scrollTo=DDSzKgRUFsKG)
 
 **Testing pictures:** credits @ [Pexel.com](https://www.pexels.com/it-it/) (CC-0)
 

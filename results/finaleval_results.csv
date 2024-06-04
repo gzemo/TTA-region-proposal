@@ -1,0 +1,17 @@
+backbone,mode,Ntrials,popSize,kernel_size,enableSR,enableAugm,trainIter,errorRate,time
+resnet,emap,5,4,11,True,True,1,0.9728,4683.7793
+resnet,emap,5,4,11,False,True,1,0.9765333333333334,1616.0038
+resnet,emap,5,8,11,True,True,1,0.9781333333333333,9366.5464
+resnet,emap,5,8,11,False,True,1,0.9774666666666667,2187.793
+resnet,freqmap,5,4,11,True,True,1,0.9824,4915.2856
+resnet,freqmap,5,4,11,False,True,1,0.978,1370.2243
+resnet,freqmap,5,8,11,True,True,1,0.9732,8532.4007
+resnet,freqmap,5,8,11,False,True,1,0.9742666666666666,1342.241
+resnet,emap,5,4,3,False,True,1,0.9741333333333333,1763.5416
+resnet,emap,5,8,3,False,True,1,0.9714666666666667,2164.1465
+resnet,freqmap,5,4,5,False,True,1,0.9726666666666667,883.1161
+resnet,freqmap,5,8,5,False,True,1,0.9717333333333333,1299.0856
+resnet,freqmap,5,4,3,False,True,1,0.9764,873.2011
+resnet,freqmap,5,8,3,False,True,1,0.9713333333333334,1293.4676
+resnet,emap,5,4,5,False,True,1,0.9778666666666667,1512.9581
+resnet,emap,5,8,5,False,True,1,0.9696,1922.0289

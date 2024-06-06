@@ -15,3 +15,10 @@ resnet,freqmap,5,4,3,False,True,1,0.9764,873.2011
 resnet,freqmap,5,8,3,False,True,1,0.9713333333333334,1293.4676
 resnet,emap,5,4,5,False,True,1,0.9778666666666667,1512.9581
 resnet,emap,5,8,5,False,True,1,0.9696,1922.0289
+resnet,emap,5,16,3,False,True,1,0.9690666666666666,2880.4112
+resnet,freqmap,5,16,3,False,True,1,0.9717333333333333,2071.379
+resnet,emap,5,16,5,False,True,1,0.9702666666666666,2660.2967
+resnet,freqmap,5,16,5,False,True,1,0.9712,2126.2795
+resnet,emap,5,16,11,False,True,1,0.9674666666666667,2518.1124
+resnet,freqmap,5,16,11,False,True,1,0.9704,2131.6474
+resnet,emap,10,16,3,False,True,1,0.9705333333333334,3009.2803

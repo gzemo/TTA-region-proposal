@@ -1,8 +1,11 @@
 # Test Time Adaptation through externally guided Region Proposal
 
 ![alt text](./pics/pipeline.png)
+*Image adapted from:  Zhang et al., NeurIPS, 2022;  Liu et al., 2023*
 
 **Project implementation and report:** [TTA_region_proposal.ipynb](https://github.com/gzemo/TTA-region-proposal/blob/main/TTA_region_proposal.ipynb) 
+
+---
 
 ### Overview
 Test Time Adaptation (TTA) is considered to be an out-of-the-box self-supervised procedure. It is expected to enhance Deep Learning model's predictive capability by means of exploitable test set features via an online learning stage by optimizing a pretext task. The purpose of this procedure is to better address the expected test set domain shift by increasing the prediction confidence by "episodic" model parameters update.
@@ -12,6 +15,7 @@ To tackle the domain shift problem in the context of image classification two in
 
 This allows us to include the most insightful areas and to further exclude irrelevant portions that may hinder target objects classification.
 
+---
 
 ### References
 

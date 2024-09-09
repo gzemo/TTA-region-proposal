@@ -1,5 +1,7 @@
 # Test Time Adaptation through externally guided Region Proposal
 
+![alt text](./pics/pipeline.png)
+
 **Project implementation and report:** [TTA_region_proposal.ipynb](https://github.com/gzemo/TTA-region-proposal/blob/main/TTA_region_proposal.ipynb) 
 
 ### Overview
@@ -7,6 +9,7 @@ Test Time Adaptation (TTA) is considered to be an out-of-the-box self-supervised
 To tackle the domain shift problem in the context of image classification two independent Region Proposal (RP) modules had been developed in order to improve the final prediction. A guided search over portions of interest of a given image at test time is provided by means of:
 1. an external, intra-image optimization task via **Covariance Matrix Adaptation, Evolutionary Strategy (CMA-ES)**,
 2. a confidence-based region sampling via a prompt based **Zero-shot object detection model (gDINO)**.
+
 This allows us to include the most insightful areas and to further exclude irrelevant portions that may hinder target objects classification.
 
 

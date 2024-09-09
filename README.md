@@ -16,7 +16,9 @@ To tackle the domain shift problem in the context of image classification two in
 This allows us to include the most insightful areas and to further exclude irrelevant portions that may hinder target objects classification.
 
 
-### Results over Imagenet-A
+### Results over ImageNet-A
+
+Displaying error rate percentage over ImageNet-A 
 
 | backbone | baseline | MEMO TTA, batch=16 | Evo<br/> model-based, batch=16 |Evo<br/> emap-based<br/>kernel size = 3, batch=16 | Evo<br/> emap-based<br/>kernel size = 11, batch=16 |  Evo<br/> freqmap-based<br/>kernel size = 3, batch=16 | Evo<br/> freqmap-based<br/>kernel size = 11, batch=16 | gDINO<br/>box_thr=0.2, text_thr=0.2,<br/> confidence=1, batch=16 | gDINO<br/>box_thr=0.2, text_thr=0.2,<br/> confidence=1, batch=32 |
 |----------|----------|----------|---------|--------|-------|--------|---------|--------|-------|

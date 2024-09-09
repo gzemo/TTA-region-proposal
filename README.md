@@ -1,4 +1,5 @@
-# tta-deep-learning
+# Test Time Adaptation through externally guided Region Proposal
+
 
 If you want to test the latest version, please download the `TTA_project_SRtesting.ipynb` file that had been modified in AWS.
 

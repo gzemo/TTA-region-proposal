@@ -15,6 +15,14 @@ To tackle the domain shift problem in the context of image classification two in
 
 This allows us to include the most insightful areas and to further exclude irrelevant portions that may hinder target objects classification.
 
+
+### Results over Imagenet-A
+
+| backbone | baseline | MEMO TTA, batch=16 | Evo<br/> model-based, batch=16 |Evo<br/> emap-based<br/>kernel size = 3, batch=16 | Evo<br/> emap-based<br/>kernel size = 11, batch=16 |  Evo<br/> freqmap-based<br/>kernel size = 3, batch=16 | Evo<br/> freqmap-based<br/>kernel size = 11, batch=16 | gDINO<br/>box_thr=0.2, text_thr=0.2,<br/> confidence=1, batch=16 | gDINO<br/>box_thr=0.2, text_thr=0.2,<br/> confidence=1, batch=32 |
+|----------|----------|----------|---------|--------|-------|--------|---------|--------|-------|
+| resnet   | 99.1     | 98.6     | 98.8 (<span style="color:red">+0.2</span>)    | 99.2 (<span style="color:red">+0.6</span>) |  99.2 (<span style="color:red">+0.6</span>)  |  99.2 (<span style="color:red">+0.6</span>)   | 99.4 (<span style="color:red">+0.8</span>)  | **98.4** (<span style="color:green">**-0.2**</span>) | **98.3** (<span style="color:green">**-0.3**</span>) |
+| rvt*-small | 94.7   | 90.6     | 92.3 (<span style="color:red">+1.7</span>)    |92.4 (<span style="color:red">+1.8</span>)  |  92.9 (<span style="color:red">+2.3</span>) |  92.9 (<span style="color:red">+2.3</span>)   | 93.2 (<span style="color:red">+2.6</span>)    | **85.7** (<span style="color:green">**-4.9**</span>) | **85.4** (<span style="color:green">**-5.2**</span>) |
+
 ---
 
 ### References

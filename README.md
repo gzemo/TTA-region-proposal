@@ -18,7 +18,7 @@ This allows us to include the most insightful areas and to further exclude irrel
 
 ### Results over ImageNet-A
 
-Displaying error rate percentage over ImageNet-A 
+Displaying ImageNet-A error rate percentage evaluated over `resnet-50` and `rvt*-small` pretrained backbones according to the following Region Proposal settings.
 
 | backbone | baseline | MEMO TTA, batch=16 | Evo<br/> model-based, batch=16 |Evo<br/> emap-based<br/>kernel size = 3, batch=16 | Evo<br/> emap-based<br/>kernel size = 11, batch=16 |  Evo<br/> freqmap-based<br/>kernel size = 3, batch=16 | Evo<br/> freqmap-based<br/>kernel size = 11, batch=16 | gDINO<br/>box_thr=0.2, text_thr=0.2,<br/> confidence=1, batch=16 | gDINO<br/>box_thr=0.2, text_thr=0.2,<br/> confidence=1, batch=32 |
 |----------|----------|----------|---------|--------|-------|--------|---------|--------|-------|

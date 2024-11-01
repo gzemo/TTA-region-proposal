@@ -9,7 +9,7 @@
 
 ### Overview
 Test Time Adaptation (TTA) is considered to be an out-of-the-box self-supervised procedure. It is expected to enhance Deep Learning model's predictive capability by means of exploitable test set features via an online learning stage by optimizing a pretext task. The purpose of this procedure is to better address the expected test set domain shift by increasing the prediction confidence by "episodic" model parameters update.
-To tackle the domain shift problem in the context of image classification two independent Region Proposal (RP) modules had been developed in order to improve the final prediction. A guided search over portions of interest of a given image at test time is provided by means of:
+To tackle the domain shift problem in the context of image classification two independent Region Proposal (RP) modules have been developed in order to improve the final prediction. A guided search over portions of interest of a given image at test time is provided by means of:
 1. an external, intra-image optimization task via **Covariance Matrix Adaptation, Evolutionary Strategy (CMA-ES)**,
 2. a confidence-based region sampling via a prompt based **Zero-shot object detection model (gDINO)**.
 
